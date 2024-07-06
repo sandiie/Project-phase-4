@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Layout from './Layout';
 import Home from './pages/Home';
-import Allhouses from './pages/Allhouses';
+import AllProperties from './pages/AllProperties';
 import Contact from './pages/Contact';
-import Addhouse from './pages/Addhouse';
+import AddProperty from './pages/AddProperty';
 
 
 function App() {
@@ -17,8 +17,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/allhouses" element={<Allhouses/>} />
-            <Route path="/addhouse" element={<Addhouse/>} />
+            <Route path="/allproperties" element={<AllProperties />} />
+            <Route path="/addproperty" element={<AddProperty />} />
+         
              <Route path="/contact" element={<Contact/>} />
              
           </Route>

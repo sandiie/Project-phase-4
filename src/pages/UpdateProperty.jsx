@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Updatehouse() {
+export default function UpdateProperties() {
   return (
     <div>Updatehouse</div>
   )

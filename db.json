@@ -1,0 +1,222 @@
+{
+  "listings": [
+    {
+      "id": "1",
+      "title": "4K Ultra HD TV",
+      "description": "A high-definition television with a stunning display.",
+      "price": 799.99,
+      "address": "123 Main St.",
+      "imageUrl": "https://example.com/tv.jpg",
+      "category": {
+        "id": 1,
+        "name": "Electronics"
+      },
+      "createdBy": {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "profileImage": "https://example.com/user1.jpg"
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "userId": 2,
+          "rating": 4,
+          "comment": "Great picture quality.",
+          "date": "2024-07-01"
+        },
+        {
+          "id": 2,
+          "userId": 3,
+          "rating": 5,
+          "comment": "Excellent TV for the price.",
+          "date": "2024-07-02"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Modern Office Chair",
+      "description": "Ergonomic office chair with adjustable settings.",
+      "price": 199.99,
+      "address": "123 Main St.",
+      "imageUrl": "https://example.com/chair.jpg",
+      "category": {
+        "id": 2,
+        "name": "Furniture"
+      },
+      "createdBy": {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "profileImage": "https://example.com/user2.jpg"
+      },
+      "reviews": [
+        {
+          "id": 3,
+          "userId": 1,
+          "rating": 5,
+          "comment": "Very comfortable and stylish.",
+          "date": "2024-07-03"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "4K Ultra HD TV",
+      "description": "A high-definition television with a stunning display.",
+      "price": 799.99,
+      "address": "123 Main St.",
+      "imageUrl": "https://example.com/tv.jpg",
+      "category": {
+        "id": 1,
+        "name": "Electronics"
+      },
+      "createdBy": {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "profileImage": "https://example.com/user1.jpg"
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "userId": 2,
+          "rating": 4,
+          "comment": "Great picture quality.",
+          "date": "2024-07-01"
+        },
+        {
+          "id": 2,
+          "userId": 3,
+          "rating": 5,
+          "comment": "Excellent TV for the price.",
+          "date": "2024-07-02"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Modern Office Chair",
+      "description": "Ergonomic office chair with adjustable settings.",
+      "price": 199.99,
+      "address": "123 Main St.",
+      "imageUrl": "https://example.com/chair.jpg",
+      "category": {
+        "id": 2,
+        "name": "Furniture"
+      },
+      "createdBy": {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "profileImage": "https://example.com/user2.jpg"
+      },
+      "reviews": [
+        {
+          "id": 3,
+          "userId": 1,
+          "rating": 5,
+          "comment": "Very comfortable and stylish.",
+          "date": "2024-07-03"
+        }
+      ]
+    },
+    {
+      "id": "d9c4",
+      "title": "as",
+      "description": "ssssssssssssssssss",
+      "price": "sssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "sssssss"
+    },
+    {
+      "id": "2574",
+      "title": "as",
+      "description": "ssssssssssssssssss",
+      "price": "sssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "sssssss"
+    },
+    {
+      "id": "45e7",
+      "title": "as",
+      "description": "ssssssssssssssssss",
+      "price": "sssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "sssssss"
+    },
+    {
+      "id": "e297",
+      "title": "as",
+      "description": "ssssssssssssssssss",
+      "price": "sssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "sssssss"
+    },
+    {
+      "id": "64fb",
+      "title": "as",
+      "description": "ssssssssssssssssss",
+      "price": "sssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "sssssss"
+    },
+    {
+      "id": "0e9e",
+      "title": "as",
+      "description": "ssssssss",
+      "price": "ssssssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "ssssssssssssssssss"
+    },
+    {
+      "id": "945b",
+      "title": "as",
+      "description": "ssssssss",
+      "price": "ssssssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "ssssssssssssssssss"
+    },
+    {
+      "id": "fc18",
+      "title": "as",
+      "description": "ssssssss",
+      "price": "ssssssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "ssssssssssssssssss"
+    },
+    {
+      "id": "012b",
+      "title": "as",
+      "description": "ssssssss",
+      "price": "ssssssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "ssssssssssssssssss"
+    },
+    {
+      "id": "a054",
+      "title": "as",
+      "description": "ssssssss",
+      "price": "ssssssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "ssssssssssssssssss"
+    },
+    {
+      "id": "9522",
+      "title": "as",
+      "description": "ssssssss",
+      "price": "ssssssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "ssssssssssssssssss"
+    },
+    {
+      "id": "b285",
+      "title": "as",
+      "description": "ssssssss",
+      "price": "ssssssssssssssssssss",
+      "address": "ssssssssssssssss",
+      "image": "ssssssssssssssssss"
+    }
+  ]
+}
