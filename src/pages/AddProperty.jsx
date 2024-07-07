@@ -1,8 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 export default function AddProperty() {
 
+  const navigate = useNavigate();
   const [title, setTitle] = useState()
   const [description, setDescription] = useState()
   const [price, setPrice] = useState()
@@ -28,6 +30,7 @@ function handleSubmit(e){
 })
   .then((response) => response.json())
   .then((res) =>{
+    navigate('/allproperties')
     toast.success('Listing added successfully !')
   }
   );

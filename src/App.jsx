@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import AllProperties from './pages/AllProperties';
 import Contact from './pages/Contact';
 import AddProperty from './pages/AddProperty';
+import Listing from './components/Listing';
+import Indvidualproperty from './pages/Individualproperty';
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/allproperties" element={<AllProperties />} />
             <Route path="/addproperty" element={<AddProperty />} />
-         
+            <Route path="/individualproperty/:id" element={<Indvidualproperty />} />
              <Route path="/contact" element={<Contact/>} />
              
           </Route>
