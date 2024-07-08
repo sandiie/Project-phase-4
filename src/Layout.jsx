@@ -12,7 +12,7 @@ export default function Layout() {
 
   <Navbar />
  
-  {/* <Footer/> */}
+  
   <ToastContainer
 position="top-right"
 autoClose={5000}
@@ -28,7 +28,9 @@ theme="dark"
 />
 {/* Same as */}
 <ToastContainer />
+
   <Outlet />
+  <Footer/>
     </>
   )
 }

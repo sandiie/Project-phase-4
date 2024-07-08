@@ -37,11 +37,26 @@ export default function Indvidualproperty()
 <div  className="bg-white p-6 rounded-lg shadow-lg">
     <div class="p-5">
        
-           <h5 className="text-2xl font-bold mb-4">{listing.title}</h5>
-            <img className="rounded-lg  mx-auto my-4 shadow mb-4 h-[70vh]" src={listing.image} alt="" />
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{listing.description}.</p>
-         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{listing.price}.</p>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{listing.address}.</p>
+           
+         
+            <img 
+                className="rounded-lg mx-auto my-4 shadow h-[70vh] w-full object-cover" 
+                src={listing.image} 
+                alt={listing.title} 
+            />
+            <h5 className="text-4xl font-extrabold mb-4 p-6 text-center text-blue-700 underline">
+                {listing.title}
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 p-5 dark:text-gray-400">
+                Desription : {listing.description}
+            </p>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Price : {listing.price}
+            </p>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Address : {listing.address}
+            </p>
+       
          
           <button onClick={() => handleDelete(listing.id)} type="button" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Delete</button>
         

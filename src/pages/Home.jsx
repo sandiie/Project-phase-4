@@ -2,76 +2,37 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import Main from '../components/Main'
 import Listing from '../components/Listing'
-
 import ReactPaginate from 'react-paginate';
+import { Link } from 'react-router-dom';
+
 
 export default function Home() {
-   
-  const [listings, setListings] = useState([])
-  const [onDelete, setOnDelete] = useState()
-   useEffect(() => {
-     fetch('http://localhost:3000/listings')
-     .then((response) => response.json())
-     .then((json) =>{
-       setListings(json)
-     } );
-   },[])
- 
-
-   //React pagination
-  
-  // Here we use item offsets; we could also use page offsets
-  // following the API or data you're working with.
-  const [itemOffset, setItemOffset] = useState(0);
-
-  // Simulate fetching listings from another resources.
-  // (This could be items from props; or items loaded in a local state
-  // from an API endpoint with useEffect and useState)
-  const endOffset = itemOffset + 3;
-  console.log(`Loading items from ${itemOffset} to ${endOffset}`);
-  const currentItems = listings.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(listings.length / 3);
-
-  // Invoke when user click to request another page.
-  const handlePageClick = (event) => {
-    const newOffset = (event.selected * 3) % listings.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
-    setItemOffset(newOffset);
-  }
-   
-
-  return ( 
+   return (
     <>
-     {/* <Main/> */}
-<div className='grid grid-cols-1 md:grid-cols-3 gap-4 '>
-  
-  
-  
-   {
-      currentItems && currentItems.map((listing) => (
-        <Listing key={listing.id} listing={listing} setOnDelete={setOnDelete}/>
-      ))
-    }
+     <div
+  className="background-img w-full h-screen flex justify-center bg-cover bg-center"
+  style={{ backgroundImage: "url('https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004020.jpg?t=st=1720431412~exp=1720435012~hmac=6c1d022b8be1c37225476716d5a6faba5d9f711613d69710d54ce993c2af9628&w=1380')" }}
+>
+  <div className="w-[80%] h-min flex flex-col items-start z-0 text-[var(--smoothWhite)] leading-auto mt-[10rem] select-none max-sm:mt-[8rem] max-xs:items-center max-xs:text-center ">
+    <h1 className="text-[4.5rem] font-bold max-sm:text-[2.5rem] max-md:text-[3.3rem] max-lg:text-[4.2rem]  text-white">
+      Home That Makes
+    </h1>
+    <h1 className="text-[4.5rem] font-bold max-sm:text-[2.5rem] max-md:text-[3.3rem] max-lg:text-[4.2rem]  text-white">
+      You Living Life!
+    </h1>
+    <p className="text-[1.1rem] w-[48%] font-medium max-lg:w-[60%] max-sm:w-[70%] max-sm:text-[0.9rem]  text-white">
+      Are you looking for amazing Real estate? Don't worry! we got it for you
+    </p>
+    <Link to="/allproperties">
+      <button className="bg-white text-[1.1rem] font-semibold rounded-full py-[.63rem] px-[1.9rem] mt-[1.5rem] hover:text-[var(--mainBlue)] hover:bg-blue-500 hover:shadow-md hover:shadow-[var(--mainBlue)] transition duration-400">
+       All Properties
+      </button>
+    </Link>
+  </div>
+</div>
 
-     
-  </div>     
-   <div className='flex flex-row bg-slate-300 justify-center'>
-     <ReactPaginate
-        breakLabel="..."
-        nextLabel="next >"
-        containerClassName='flex gap-4'
-        activeClassName='text-red-700 font-bold'
-      
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={5}
-        pageCount={pageCount}
-        previousLabel="< previous"
-        renderOnZeroPageCount={null}
-      />
-   </div>
-      
+
     </>
-  )
+   )
+  
 }
