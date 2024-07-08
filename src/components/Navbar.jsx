@@ -19,17 +19,17 @@ export default function Navbar() {
     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <Link to="/"className="block py-2 px-3 text-gray-950  bg-blue-700 rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</Link>
+          <Link to="/"className="block py-2 px-3 text-gray-950  bg-blue-700 rounded md:bg-transparent  md:p-0 dark:text-white hover:underline md:dark:text-blue-500" aria-current="page">Home</Link>
         </li>
         <li>
-          <Link to="/allproperties" className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">All Properties</Link>
+          <Link to="/allproperties" className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:underline">All Properties</Link>
         </li>
         <li>
-          <Link to="/addproperty"  className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Add Property</Link>
+          <Link to="/addproperty"  className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:underline">Add Property</Link>
         </li>
         
         <li>
-          <Link to="/contact" className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</Link>
+          <Link to="/contact" className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:underline">Contact Us</Link>
         </li>
       </ul>
     </div>

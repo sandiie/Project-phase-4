@@ -36,19 +36,19 @@ function handleSubmit(e){
   );
 }
   return (
-    <div className='grid grid-cols-2 h-[80vh] bg-sky-900 mt-6'>
-      <div className='bg-cyan-500 text-white flex justify-center items-center'>
-         <h1 className='text-6xl font-bold'>Add new Property</h1>
+    <div className='grid grid-cols-2 h-[80vh] bg-white mt-6 rounded-3xl'>
+      <div className='bg-white text-white flex justify-center items-center'>
+         <img src="https://img.freepik.com/free-photo/anime-building-illustration_23-2151150979.jpg?t=st=1720469933~exp=1720473533~hmac=8e47917ecd1d6c146f71325d4d24712bc3b9741daa504d9fe3e11a36bd4054ee&w=740" alt="" className=' h-[80vh]  mx-auto rounded-3xl rounded-shadow '/>
       </div>
-      <div className=' p-6'>
-         <h1 className='text-3xl text-white font-semibold text-center'>Add Property</h1>
-         <form onSubmit={handleSubmit} className=' max-w-md mx-auto '>
+      <div className=' pt-11 px-5 bg-blue-600 border-blue-500 rounded-3xl rounded-shadow ' >
+         <h1 className='text-3xl pb-24 pt-10 font-semibold text-center text-white'>Add Property</h1>
+         <form onSubmit={handleSubmit} className=' max-w-md mx-auto  border-blue-500 rounded-3xl items-center justify-center text-center'>
           <div className='relative z-0 W-full mb-5 group'>
             <input
               value={title}
               onChange={(e)=>setTitle(e.target.value)}
               type='text'
-              className='block w-full px-3 py-2 placeholder-gray-500 border rounded-md focus:outline-none focus:ring-green-600 focus:border-green-600 sm:text-sm'
+              className='block w-full px-3 py-2 placeholder-blue-500 border rounded-md focus:outline-none focus:ring-white focus:border-white sm:text-sm'
               placeholder='kindly enter the title of your property'
               required
             />
@@ -59,7 +59,7 @@ function handleSubmit(e){
               value={description}
               onChange={(e)=>setDescription(e.target.value)}
               type='text'
-              className='block w-full px-3 py-2 placeholder-gray-500 border rounded-md focus:outline-none focus:ring-green-600 focus:border-green-600 sm:text-sm'
+              className='block w-full px-3 py-2 placeholder-blue-500 border rounded-md focus:outline-none focus:ring-white focus:border-white sm:text-sm'
               placeholder='kindly enter the description of your property'
               required
             />
@@ -71,7 +71,7 @@ function handleSubmit(e){
                 onChange={(e)=>setPrice(e.target.value)}
             
               type='text'
-              className='block w-full px-3 py-2 placeholder-gray-500 border rounded-md focus:outline-none focus:ring-green-600 focus:border-green-600 sm:text-sm'
+              className='block w-full px-3 py-2 placeholder-blue-500 border rounded-md focus:outline-none focus:ring-white focus:border-white sm:text-sm'
               placeholder='kindly enter the price of your property'
               required
             />
@@ -82,7 +82,7 @@ function handleSubmit(e){
                value={address}
                onChange={(e)=>setAddress(e.target.value)}            
               type='text'
-              className='block w-full px-3 py-2 placeholder-gray-500 border rounded-md focus:outline-none focus:ring-green-600 focus:border-green-600 sm:text-sm'
+              className='block w-full px-3 py-2 placeholder-blue-500 border rounded-md focus:outline-none focus:ring-white focus:border-white sm:text-sm'
               placeholder='kindly enter the address of your property'
               required
             />
@@ -94,13 +94,13 @@ function handleSubmit(e){
               onChange={(e)=>setImage(e.target.value)}
 
               type='text'
-              className='block w-full px-3 py-2 placeholder-gray-500 border rounded-md focus:outline-none focus:ring-green-600 focus:border-green-600 sm:text-sm'
+              className='block w-full px-3 py-2 placeholder-blue-500 border rounded-md focus:outline-none focus:ring-white focus:border-white sm:text-sm'
               placeholder='kindly add the image of the property'
               required
             />
           </div>
 
-          <button type='submit' className='flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-green-600 border border-transparent rounded-md shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600'>
+          <button type='submit' className='flex items-center justify-center mx-auto px-4 py-2 text-base font-medium text-blue-600 bg-white border border-transparent rounded-md shadow-sm hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white'>
             Add post
           </button>
         </form>

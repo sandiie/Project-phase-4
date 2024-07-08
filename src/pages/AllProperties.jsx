@@ -25,14 +25,14 @@ export default function AllProperties() {
   // Simulate fetching listings from another resources.
   // (This could be items from props; or items loaded in a local state
   // from an API endpoint with useEffect and useState)
-  const endOffset = itemOffset + 9;
+  const endOffset = itemOffset +3;
   console.log(`Loading items from ${itemOffset} to ${endOffset}`);
   const currentItems = listings.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(listings.length / 9);
+  const pageCount = Math.ceil(listings.length /3);
 
   // Invoke when user click to request another page.
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * 9) % listings.length;
+    const newOffset = (event.selected *3) % listings.length;
     console.log(
       `User requested page number ${event.selected}, which is offset ${newOffset}`
     );
@@ -43,7 +43,7 @@ export default function AllProperties() {
   return ( 
     <>
      {/* <Main/> */}
-<div className='grid grid-cols-1 md:grid-cols-3 gap-4 '>
+<div className=' grid grid-cols-3 md:grid-cols-3 gap-2 pb-16'>
   
   
   
@@ -55,12 +55,12 @@ export default function AllProperties() {
 
      
   </div>     
-   <div className='flex flex-row bg-slate-300 justify-center'>
+  <div className='flex flex-row bg-white text-blue-500 justify-center'>
      <ReactPaginate
         breakLabel="..."
         nextLabel="next >"
         containerClassName='flex gap-4'
-        activeClassName='text-red-700 font-bold'
+        activeClassName='text-gray-900 font-bold'
       
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}

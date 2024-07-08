@@ -9,22 +9,6 @@
       "image": "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150749.jpg?uid=R152627132&semt=sph"
     },
     {
-      "id": "390d",
-      "title": "xxxxx",
-      "description": "xxxxxxxxxxxxxxxxxx",
-      "price": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "address": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "image": "https://img.freepik.com/free-psd/modern-house-isolated-transparent-background_191095-26815.jpg?uid=R152627132&semt=sph"
-    },
-    {
-      "id": "8c3e",
-      "title": "8888888888888888",
-      "description": "8888888888888888888",
-      "price": "888888888888888888888",
-      "address": "8888888888888888888888",
-      "image": "https://img.freepik.com/free-psd/modern-house-isolated-transparent-background_191095-26815.jpg?uid=R152627132&semt=sph"
-    },
-    {
       "id": "dccc",
       "title": "sa",
       "description": "aaaaaaaaaaaaaaaaaaaa",
@@ -47,6 +31,30 @@
       "price": "80000",
       "address": "qweeeeeeeeeeee",
       "image": "https://img.freepik.com/free-photo/view-new-york-city-sunset_23-2151278818.jpg?t=st=1720433673~exp=1720437273~hmac=a7f4773c03d9fa915a6eee88bb56da37240fcaf57c7f262196eccd9a980c696b&w=740"
+    },
+    {
+      "id": "2652",
+      "title": "AAAA",
+      "description": "aaaaaads",
+      "price": "sssssssssss",
+      "address": "sssssssssssssssssss",
+      "image": "ssssssssssssssssssssss"
+    },
+    {
+      "id": "738d",
+      "title": "as",
+      "description": "ssssssssssss",
+      "price": "sssssssssssssss",
+      "address": "sssssssssssss",
+      "image": "sssssssssssssssssssssssss"
+    },
+    {
+      "id": "1f58",
+      "title": "sa",
+      "description": "aaaaaaaaaaaaaaa",
+      "price": "aaaaaaaaaaaaaaaa",
+      "address": "aaaaaaaaaaaaaa",
+      "image": "aaaaaaaaaaaaaaaaaaa"
     }
   ]
 }
