@@ -9,12 +9,14 @@ export default function Indvidualproperty()
   const navigate = useNavigate();
   const {id} = useParams();
  const [listing, setListing] = useState({})
+ const [comments, setComments] = useState([]);
  
    useEffect(() => {
      fetch(`http://localhost:3000/listings/${id}`)
      .then((response) => response.json())
      .then((json) =>{
        setListing(json)
+       setComments(json.comments)
      } );
    }, [id])
 
@@ -55,6 +57,18 @@ export default function Indvidualproperty()
             </p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Address : {listing.address}
+            </p>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                 <bold>All Comments</bold>
+                  {comments.map(comment => (
+                  <ul>  
+                    <li key={comment.id}>
+                    <strong>Rating: {comment.rating}</strong>
+                    <p>{comment.review}</p>
+                    </li>
+                  </ul>
+                  ))}
+                
             </p>
        
          

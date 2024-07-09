@@ -27,10 +27,18 @@ export default function Navbar() {
         <li>
           <Link to="/addproperty"  className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:underline">Add Property</Link>
         </li>
-        
-        <li>
+
+         <li>
           <Link to="/contact" className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:underline">Contact Us</Link>
         </li>
+        
+         <li>
+          <Link to="/login" className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:underline">Login</Link>
+        </li>
+         <li>
+          <Link to="/register" className="block py-2 px-3 text-blue-600 rounded hover:bg-slate-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:underline">Register</Link>
+        </li>
+       
       </ul>
     </div>
   </div>

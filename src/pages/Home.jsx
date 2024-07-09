@@ -1,12 +1,26 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
+import {useContext, useEffect, useState } from 'react'
 import Main from '../components/Main'
 import Listing from '../components/Listing'
 import ReactPaginate from 'react-paginate';
 import { Link } from 'react-router-dom';
+import {UserContext} from '../context/UserContext'
 
 
 export default function Home() {
+
+const {currentUser,register_user} = useContext(UserContext)
+
+
+
+
+
+
+
+
+
+
+
    return (
     <>
      <div
@@ -23,12 +37,34 @@ export default function Home() {
     <p className="text-[xl mt-4 w-[48%] font-medium max-lg:w-[60%] max-sm:w-[70%] max-sm:text-[0.9rem]  text-white">
      Discover Your Dream Home with Us! Explore our curated listings to find the perfect property.
     </p>
-    <Link to="/allproperties">
+    <Link to="/register">
       <button className="mt-6 inline-block bg-blue-600 text-white font-semibold rounded-full py-3 px-8 hover:bg-white hover:text-blue-600 transition duration-300">
-       All Properties
+      Register
+
+
+
+
+
+
+
+
+
+
+
+
+
       </button>
     </Link>
   </div>
+
+
+
+
+
+
+
+
+
 </div>
 
 

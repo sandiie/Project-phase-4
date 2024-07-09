@@ -6,7 +6,19 @@
       "description": "description",
       "price": "price",
       "address": "address",
-      "image": "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150749.jpg?uid=R152627132&semt=sph"
+      "image": "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150749.jpg?uid=R152627132&semt=sph",
+      "comments": [
+        {
+          "id": 1,
+          "rating": "8",
+          "review": "What a beautiful House."
+        },
+        {
+          "id": 2,
+          "rating": "4",
+          "review": "What a House."
+        }
+      ]
     },
     {
       "id": "dccc",
@@ -14,7 +26,19 @@
       "description": "aaaaaaaaaaaaaaaaaaaa",
       "price": "aaaaaaaaaaaaaa",
       "address": "aaaaaaaaaaaaaaaaa",
-      "image": "aaaaa"
+      "image": "aaaaa","comments": [
+        {
+          "id": 1,
+          "rating": "8",
+          "review": "What a beautiful House."
+        },
+        {
+          "id": 2,
+          "rating": "4",
+          "review": "What a House."
+        }
+      ]
+
     },
     {
       "id": "ff28",
@@ -22,7 +46,19 @@
       "description": "eeeeeeeeeeeeeeeeeeeee",
       "price": "eeeeeeeeeeeeeee",
       "address": "eeeeeeeeeeeee",
-      "image": "eeeeeeeeeeeeeeeeeeeeeee"
+      "image": "eeeeeeeeeeeeeeeeeeeeeee",
+       "comments": [
+        {
+          "id": 1,
+          "rating": "8",
+          "review": "What a beautiful House."
+        },
+        {
+          "id": 2,
+          "rating": "4",
+          "review": "What a House."
+        }
+      ]
     },
     {
       "id": "5030",
@@ -30,7 +66,19 @@
       "description": "ssssssssssssssssssss",
       "price": "80000",
       "address": "qweeeeeeeeeeee",
-      "image": "https://img.freepik.com/free-photo/view-new-york-city-sunset_23-2151278818.jpg?t=st=1720433673~exp=1720437273~hmac=a7f4773c03d9fa915a6eee88bb56da37240fcaf57c7f262196eccd9a980c696b&w=740"
+      "image": "https://img.freepik.com/free-photo/view-new-york-city-sunset_23-2151278818.jpg?t=st=1720433673~exp=1720437273~hmac=a7f4773c03d9fa915a6eee88bb56da37240fcaf57c7f262196eccd9a980c696b&w=740",
+       "comments": [
+        {
+          "id": 1,
+          "rating": "8",
+          "review": "What a beautiful House."
+        },
+        {
+          "id": 2,
+          "rating": "4",
+          "review": "What a House."
+        }
+      ]
     },
     {
       "id": "2652",

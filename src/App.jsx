@@ -8,6 +8,11 @@ import Contact from './pages/Contact';
 import AddProperty from './pages/AddProperty';
 import Listing from './components/Listing';
 import Indvidualproperty from './pages/Individualproperty';
+import { PropertyProvider } from './context/PropertiesContext';
+import { UserProvider } from './context/UserContext';
+
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 
 function App() {
@@ -15,6 +20,8 @@ function App() {
 
   return (
     <>
+      <UserProvider>
+      <PropertyProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -23,10 +30,14 @@ function App() {
             <Route path="/addproperty" element={<AddProperty />} />
             <Route path="/individualproperty/:id" element={<Indvidualproperty />} />
              <Route path="/contact" element={<Contact/>} />
-             
+             <Route path='/login' element={<Login/>}/>
+             <Route path='/register' element = {<Register></Register>}/>
+    
           </Route>
         </Routes>
       </BrowserRouter>
+      </PropertyProvider>
+      </UserProvider>
     </>
   )
 }
