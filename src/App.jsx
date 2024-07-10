@@ -10,7 +10,7 @@ import Listing from './components/Listing';
 import Indvidualproperty from './pages/Individualproperty';
 import { PropertyProvider } from './context/PropertiesContext';
 import { UserProvider } from './context/UserContext';
-
+import Profile from './pages/Profile'
 import Login from './pages/Login';
 import Register from './pages/Register';
 
@@ -32,7 +32,7 @@ function App() {
              <Route path="/contact" element={<Contact/>} />
              <Route path='/login' element={<Login/>}/>
              <Route path='/register' element = {<Register></Register>}/>
-             {/* <Route path="/profile" element={<Profile/>} /> */}
+            <Route path="/profile" element={<Profile/>} />
     
           </Route>
         </Routes>
