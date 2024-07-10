@@ -1,10 +1,11 @@
-import random
+
 from datetime import timedelta 
 from flask import Flask, request, jsonify
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity, get_jwt, create_access_token
 from flask_cors import CORS
 from flask_bcrypt import Bcrypt
+from sqlalchemy.exc import IntegrityError
 from models import db, User, RealEstate, Purchase, Review  # Import db and models here
 
 bcrypt = Bcrypt()
@@ -119,16 +120,22 @@ def get_user(id):
     }
     return jsonify(user_data)
 
-# Delete user
 @app.route('/users/<int:id>', methods=['DELETE'])
 @jwt_required()
 def delete_user(id):
     user = User.query.get_or_404(id)
     if user is None:
         return jsonify({'message': 'User not found'}), 404
-    db.session.delete(user)
-    db.session.commit()
-    return jsonify({'message': 'User deleted successfully'})
+
+    # Delete associated purchases
+    try:
+        Purchase.query.filter_by(user_id=user.id).delete()
+        db.session.delete(user)
+        db.session.commit()
+        return jsonify({'message': 'User deleted successfully'}), 200
+    except IntegrityError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 500
 
   
 # Update profile
@@ -240,6 +247,7 @@ def get_real_estate(id):
         'user_id': real_estate.user_id
     }
     return jsonify(real_estate_data), 200
+
 # Update real estate listing
 @app.route('/real_estate/<int:id>', methods=['PATCH'])
 @jwt_required()
@@ -340,9 +348,13 @@ def get_review(id):
 @jwt_required()
 def update_review(id):
     data = request.get_json()
-    review = Review.query.get_or_404(id)
-    user_id = get_jwt_identity()
     
+    review = Review.query.get_or_404(id)
+    
+    if not review:
+        return jsonify({'message': 'Review not found'}), 404
+    
+    user_id = get_jwt_identity()
     if review.user_id != user_id:
         return jsonify({'message': 'You are not authorized to update this review'}), 404
     
@@ -352,7 +364,11 @@ def update_review(id):
         review.comment = data['comment']
     db.session.commit()
 
-    return jsonify({'message': 'Review updated successfully', 'review': review.to_dict()}), 200
+    try:
+        db.session.commit()
+        return jsonify({'message': 'Review updated successfully'}), 200
+    except Exception as e:
+        return jsonify({'message': 'Failed to update review', 'error': str(e)}), 500
 
 # Delete a review
 @app.route('/reviews/<int:id>', methods=['DELETE'])
