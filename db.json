@@ -10,12 +10,26 @@
       "comments": [
         {
           "id": 1,
+          "name": "Nimrod",
           "rating": "8",
           "review": "What a beautiful House."
         },
         {
           "id": 2,
+          "name": "Sandie",
           "rating": "4",
+          "review": "What a House."
+        },
+        {
+          "id": 3,
+          "name": "SIMON",
+          "rating": "4",
+          "review": "Beautiful House."
+        },
+        {
+          "id": 4,
+          "name": "Cynthia",
+          "rating": "7",
           "review": "What a House."
         }
       ]
@@ -26,19 +40,15 @@
       "description": "aaaaaaaaaaaaaaaaaaaa",
       "price": "aaaaaaaaaaaaaa",
       "address": "aaaaaaaaaaaaaaaaa",
-      "image": "aaaaa","comments": [
+      "image": "aaaaa",
+      "comments": [
         {
           "id": 1,
-          "rating": "8",
-          "review": "What a beautiful House."
-        },
-        {
-          "id": 2,
-          "rating": "4",
-          "review": "What a House."
+          "name": "Simon",
+          "rating": "7",
+          "review": "Great House."
         }
       ]
-
     },
     {
       "id": "ff28",
@@ -47,15 +57,29 @@
       "price": "eeeeeeeeeeeeeee",
       "address": "eeeeeeeeeeeee",
       "image": "eeeeeeeeeeeeeeeeeeeeeee",
-       "comments": [
+      "comments": [
         {
           "id": 1,
+          "name": "Nimrod",
           "rating": "8",
           "review": "What a beautiful House."
         },
         {
           "id": 2,
+          "name": "Sandie",
           "rating": "4",
+          "review": "What a House."
+        },
+        {
+          "id": 3,
+          "name": "SIMON",
+          "rating": "4",
+          "review": "Beautiful House."
+        },
+        {
+          "id": 4,
+          "name": "Cynthia",
+          "rating": "7",
           "review": "What a House."
         }
       ]
@@ -67,15 +91,29 @@
       "price": "80000",
       "address": "qweeeeeeeeeeee",
       "image": "https://img.freepik.com/free-photo/view-new-york-city-sunset_23-2151278818.jpg?t=st=1720433673~exp=1720437273~hmac=a7f4773c03d9fa915a6eee88bb56da37240fcaf57c7f262196eccd9a980c696b&w=740",
-       "comments": [
+      "comments": [
         {
           "id": 1,
+          "name": "Nimrod",
           "rating": "8",
           "review": "What a beautiful House."
         },
         {
           "id": 2,
+          "name": "Sandie",
           "rating": "4",
+          "review": "What a House."
+        },
+        {
+          "id": 3,
+          "name": "SIMON",
+          "rating": "4",
+          "review": "Beautiful House."
+        },
+        {
+          "id": 4,
+          "name": "Cynthia",
+          "rating": "7",
           "review": "What a House."
         }
       ]
